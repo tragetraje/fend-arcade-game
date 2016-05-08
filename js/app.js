@@ -3,7 +3,7 @@ var Enemy = function(x, y) {
     this.x = x;
     this.y = y;
     //Width and height for collision detection
-    this.width = 0;
+    this.width = 80;
     this.height = 50;
     this.speed = Math.floor(Math.random() * 100) + 1;
     // The image/sprite for our enemies
@@ -35,7 +35,7 @@ var Player = function(x, y) {
   this.y = y;
   //Width and height for collision detection
   this.width = 50;
-  this.height = 0;
+  this.height = 80;
     // The image/sprite for the player
   this.sprite = 'images/char-princess-girl.png';
 };
@@ -77,7 +77,7 @@ Player.prototype.reset = function(x, y) {
   this.y = y;
 };
 
-function checkCollisions(allEnemies, player) {
+function checkCollisions(player, allEnemies) {
   for (var i = 0; i < allEnemies.length; i++) {
     if (allEnemies[i].x < player.x + player.width && allEnemies[i].x + allEnemies[i].width > player.x && allEnemies[i].y < player.y + player.height && allEnemies[i].y + allEnemies[i].height > player.y) {
       player.reset(200, 400);
