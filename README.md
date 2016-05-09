@@ -1,4 +1,5 @@
-# frontend-nanodegree-arcade-game
+
+frontend-nanodegree-arcade-game
 ===============================
 
 You can play my basic version of classic Arcade game Frogger [here] (tragetraje.github.io/fend-arcade-game)
