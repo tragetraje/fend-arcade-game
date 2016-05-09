@@ -5,7 +5,7 @@ var Enemy = function(x, y) {
     //Width and height for collision detection
     this.width = 80;
     this.height = 50;
-    this.speed = Math.floor(Math.random() * 100) + 1;
+    this.speed = Math.floor(Math.random() * 300) + 30;
     // The image/sprite for our enemies
     this.sprite = 'images/enemy-bug.png';
 };
@@ -36,8 +36,15 @@ var Player = function(x, y) {
   //Width and height for collision detection
   this.width = 50;
   this.height = 80;
-    // The image/sprite for the player
-  this.sprite = 'images/char-princess-girl.png';
+    // Random image/sprite for the player
+  this.playerSprite = [
+  'images/char-princess-girl.png',
+  'images/char-boy.png',
+  'images/char-cat-girl.png',
+  'images/char-horn-girl.png',
+  'images/char-pink-girl.png'
+];
+  this.sprite = this.playerSprite[Math.floor(Math.random() * 5)];
 };
 
 //Update player's position when he goes off the top of the screen
