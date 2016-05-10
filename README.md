@@ -2,7 +2,7 @@
 frontend-nanodegree-arcade-game
 ===============================
 
-You can play my basic version of classic Arcade game Frogger [here] (tragetraje.github.io/fend-arcade-game)
+You can play my basic version of classic Arcade game Frogger [here] (http://tragetraje.github.io/fend-arcade-game/)
 
 Use arrow keys to make your way to the water while avoiding the crossing bugs, collision with them resets the game
 
